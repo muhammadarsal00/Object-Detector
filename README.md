@@ -1,6 +1,6 @@
 After opening my project you have to download the three files which are large files and have data to detect the objects which is the calculated data.
 1. "yolo3.cfg"
 2. "yolo3.txt"
-3. "yolo3.weights"
-Brief Expalination the code.
+3. "yolo3.weights"<br>
+Brief Expalination the code.<br>
 Thus for the computer vision the program uses cv2 that is generally called OpenCV and numpy for numerical work. Initializes the loaded YOLO object detection model in that it loads weight and configuration files at its onset. Reads a file to pick out class labels (e. g. “person,” “car”). Enables the capture of frames through video stream that uses the web cam. Receives image multiple times from the webcam in real time and searches in all of them for objects using YOLO. They first convert frame in to the YOLO expected format and then do the detection. Continues to apply detections extraction and filtration with the help of the confidence value and coordinates transformation into bounding boxes. Removes all the bounding boxes from the image but includes those that are most certain detections out of the algorithm. Draws rectangles around the frame and writes the labels on the objects which has been identified. It then draws the processed frame in a new window and waits for the enter key or ‘q’ key to be pressed. The code used is the YOLO for object detection in real time by feeding the webcam and the output is displayed in real time.
